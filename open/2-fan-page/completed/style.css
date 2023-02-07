@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Satisfy');
+
+body {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 700px;
+    font-family: 'Lora', serif;
+    background-color: wheat;
+    font-size: 20px;
+}
+
+header {
+    margin-top: 48px;
+}
+
+h1, h2, h3, h3 {
+    font-family: 'Satisfy', cursive;
+    color: darkgreen;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    line-height: 1.65;
+}
+
+section {
+    margin: 60px 0;
+}
+
+footer {
+    text-align: center;
+}
