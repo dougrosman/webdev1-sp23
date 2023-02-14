@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    color: #333;
+    background-color: #dfdfdf;
+}
+
+.logo {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #eee;
+}
+
+nav a {
+    color: #eee;
+}
+
+header, footer {
+    background-color: #722;
+    color: #eee;
+    padding: 16px;
+}
+
+main {
+    margin: 60px auto;
+    padding: 10px;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+section {
+    margin: 80px 0;
+}
+
+footer {
+    text-align: center;
+}
+
+figure {
+    margin: 40px 0;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.highlight {
+    background-color: #7df;
+    padding: 12px;
+    border-left: 12px solid #38a;
+    border-radius: 12px;
+    margin: 0;
+}
