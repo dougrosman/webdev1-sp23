@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    color: #333;
+    background-color: #efefef;
+}
+
+header, footer {
+    background-color: #04ac88;
+    color: #eee;
+    padding: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    line-height: 1.75;
+    margin: 40px 0;
+    font-size: 18px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: #f04500;
+}
+
+a:hover {
+    color:#04ac88
+}
+
+
+/* HEADER */
+
+header a {
+    color: #eee;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #f04500;
+}
+
+.logo {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 16px;
+    font-size: 40px;
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
+.byline {
+    margin: 0;
+    font-size: 22px;
+}
+
+
+/* MAIN */
+
+main {
+    margin: 60px auto;
+    padding: 12px;
+    max-width: 700px;
+}
+
+.fish-menu {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.fish-menu a {
+    color: #f04500;
+    padding: 12px;
+    background-color: #500060;
+    border-radius: 32px;
+    text-decoration: none;
+}
+
+.fish-menu a:hover {
+    background-color: #f04500;
+    color: #500060;
+}
+
+.fish-menu-nav {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+section {
+    margin: 60px 0;
+}
+
+figure {
+    margin: 40px 0;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.highlight {
+    background-color: #7df;
+    padding: 12px;
+    border-left: 12px solid #38a;
+    border-radius: 12px;
+    margin: 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+

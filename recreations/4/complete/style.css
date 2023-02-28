@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bar {
+    position: fixed;
+    background-image: url(https://web.archive.org/web/20090725223313/http://www.geocities.com/arielpurkey/starstwinkle.gif);
+}
+
+.top, .bottom {
+    width: 100%;
+    height: 100px;
+}
+
+.left, .right {
+    width: 100px;
+    height: 100%;
+}
+
+.top {
+    top: 0;
+    left: 0;
+}
+
+.right {
+    top: 0;
+    right: 0;
+}
+
+.bottom {
+    bottom: 0;
+    left: 0;
+}
+
+.left {
+    top: 0;
+    left: 0;
+}
