@@ -3,12 +3,12 @@
 /* GENERAL STYLING */
 
 /* FILL IN */
-/* Anywhere in the CSS that you see the px unit, change it out for either rem or em.
+/* Anywhere in the CSS that you see the px unit, swap it out for either rem or em.
 
 rem: use this for anywhere you see font-size or max-width properties
-em: use this for margins and padding
+em: use this for margins and padding (and other things you think should be affected by an element's font size)
 
-Remember, you can't just swap out 'px' for 'rem' or 'em', you also have to change the amounts of each so that the page looks more or less the same.
+Remember, you can't just swap out 'px' for 'rem' or 'em'; you also have to change the amounts of each so that the page looks more or less the same.
 
 */
 
@@ -63,13 +63,13 @@ a:hover {
 
 header {
     font-size: 1.25rem;
-    
+
     /* Add the necessary positioning and sizing properties below to make your header fixed to the top of the viewport. It should also stretch all the way across the width of the viewport. */
 
     /* position properties */
     /* FILL IN */
 
-    
+
     /* Add the necessary flexbox properties below to place the logo all the way to the left of the top bar, and the nav menu all the way to the right. The bottom of the logo should be vertically aligned with the bottoms of the menu items. The entire nav menu should wrap underneath the logo when the page is narrow. There should be a small gap between the logo and the nav menu. */
 
     /* flex properties */
@@ -112,7 +112,7 @@ main {
 
     padding: 12px;
     /* Once your header is fixed to the top of the viewport, the top of the page is cut off now, so you can't see the title of the page anymore. Add some padding to the top of the main section so that it isn't cut off by the header. */
-    
+
 
 }
 
@@ -145,7 +145,7 @@ main {
 
 section {
     margin-bottom: 60px;
-    
+
     /* When you click on the links in the "Jump to Section" menu, the tops of each fish section are cut off by the menu at the top of the screen. Remove the margin-top property below, and replace it with a different property that will make sure the top of each section isn't cut off (hint: it's another property from the box model)  */
 
     /* FILL IN */
@@ -183,7 +183,7 @@ footer p {
 
 .back-to-top {
 
-    
+
     /* Add the correct position properties here. The back-to-top link should remain fixed to the viewport in the bottom right corner. There should be a little bit of space around the button so that it's not touching the sides of the viewport. */
 
     /* position properties */
