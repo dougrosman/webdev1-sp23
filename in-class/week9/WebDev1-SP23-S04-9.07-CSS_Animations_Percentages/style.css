@@ -1,0 +1,41 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: move-n-grow 2s forwards;
+}
+
+@keyframes move-n-grow {
+
+
+    0% {
+        transform: translate(0, 0) scale(1);
+        background-color: pink;
+    }
+
+    25% {
+        transform: translate(400%, 0) scale(1);
+        background-color: pink;
+    }
+
+    50% {
+        transform: translate(400%, 0) scale(2);
+        background-color: pink;
+    }
+
+    75% {
+        transform: translate(400%, 400%) scale(2);
+        background-color: pink;
+    }
+
+    100% {
+        transform: translate(400%, 400%) scale(2);
+        background-color: orange;
+    }
+
+
+}
