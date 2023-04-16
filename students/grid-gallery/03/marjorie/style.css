@@ -1,0 +1,23 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 40rem;
+    margin: 0, auto;
+    font-family:Arial;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    min-height:100vh; 
+}
+
+head,footer {
+    padding: 1em;
+    text-align:center;
+    background-color:lightblue;
+}
+img {
+    width: 32%
+}

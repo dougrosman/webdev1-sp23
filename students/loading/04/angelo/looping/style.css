@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body a{
+    text-decoration: none;
+    font-size: 3em;
+    background-color: aquamarine;
+    color: black;
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+
+  width: 24em;
+  height: 4em;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  
+}
+
+.box{
+    position: relative;
+    width: 20%;
+    height: 100%;
+
+    left:50%;
+
+    animation: spin-1 5s infinite ;
+    animation-fill-mode: both;
+    animation-direction: forwards;    
+    
+}
+
+
+
+.box:nth-child(1){
+    background-color: rgb(0, 76, 82);
+    animation-delay: 0.8s;
+}
+
+.box:nth-child(2){
+    background-color: rgb(0, 123, 139);
+    animation-delay: 0.6s;
+}
+
+.box:nth-child(3){
+    background-color: rgb(0, 179, 164);
+    animation-delay: 0.4s;
+}
+
+.box:nth-child(4){
+    background-color: rgb(0, 223, 211);
+    animation-delay: 0.2s;
+}
+
+/*---------------*/
+
+.box-2{
+    position: relative;
+    width: 20%;
+    height: 100%;
+
+    right: 50%;
+    
+    animation: spin-2 5s infinite ;
+    animation-fill-mode: both;
+    animation-direction: forwards;  
+}
+
+.box-2:nth-child(5){    
+    background-color: rgb(0, 223, 211);
+    animation-delay: 0.2s;
+}
+
+.box-2:nth-child(6){
+    background-color: rgb(0, 179, 164);
+    animation-delay: 0.4s;
+}
+
+.box-2:nth-child(7){
+    background-color: rgb(0, 123, 139);
+    animation-delay: 0.6s;
+}
+
+.box-2:nth-child(8){
+    background-color: rgb(0, 76, 82);
+    animation-delay: 0.8s;
+}
+
+/*========================================================*/
+
+@keyframes spin-1 {
+
+    0%{
+       border-radius: 0px;
+    }
+
+    25%{
+        transform: rotate(360deg) translateY(200%) ;
+        border-radius: 50px;
+        background-color: lawngreen;
+    }
+
+    50%{
+        background-color: aquamarine;
+    }
+
+    100%{
+        border-radius: 0px;
+    }
+    
+}  
+
+@keyframes spin-2 {
+
+    0%{
+       border-radius: 0px;
+    }
+
+    25%{
+        transform: rotate(-360deg) translateY(200%) ;
+        border-radius: 50px;
+        background-color: lawngreen;
+    }
+
+    50%{
+        background-color: aquamarine;
+    }
+
+    100%{
+        border-radius: 0px;
+    }
+    
+}  
+ 

@@ -1,0 +1,80 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://i.giphy.com/media/FlodpfQUBSp20/giphy.webp);
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+header, footer{
+    text-align: center;
+    color: lightblue;
+    padding: 2rem;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    background-color: lightcoral;
+}
+
+header{
+    margin-bottom: 2rem;
+}
+
+footer{
+    margin-top: 2rem;
+}
+
+main{
+   display: flex;
+   flex-wrap: wrap;
+}   
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery{
+  margin: 0 auto;
+  grid-gap: 10px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+}
+
+@media only screen and (max-width:1500px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: 300px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: 290px;
+    }
+}

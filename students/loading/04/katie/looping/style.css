@@ -1,0 +1,38 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+body {
+    background-color: black;
+}
+
+.back {
+    position: absolute;
+    bottom: 0;
+    padding: 0.5% 1%;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.image {
+    animation: scale 2.5s alternate 0.2s infinite ease-in-out forwards;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 100%;
+    aspect-ratio: auto;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0) rotate(0);
+    }
+   to {
+    transform: scale(1.5) rotate(720deg);
+    }
+}

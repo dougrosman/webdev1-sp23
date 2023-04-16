@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://cdn.eso.org/images/screen/eso1132e.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+html {
+    width: 100%;
+}
+
+h1, a {
+    color: white;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+nav {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+a:hover {
+    color:darkseagreen
+}

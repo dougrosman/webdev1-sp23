@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: lightblue;
+}
+
+header { 
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+h1 { 
+    color: purple;
+    
+}
+
+nav { 
+    display: flex;
+    gap: 2em;
+    font-size: 1rem;
+}
+
+nav a {
+    transition-property: all;
+    transition-duration: 1s;
+    padding: .25em;
+}
+
+nav a:hover {
+    color: blue;
+    background-color: lightskyblue;
+    border-radius: 150px;
+    transform: rotate(180deg);
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightpink;  
+}
+
+div{
+    width: 5em;
+    height: 5em;
+    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    border-radius: 50%;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce{
+    10% { transform: translateY(1em) }
+    20% { transform: translateY(3em) }
+    30% { transform: translateY(5em) }
+    40% {transform: translateY(7em) scale(2, .5)}
+    50% { transform: translateY(5em) }
+    60% {transform: translateY(3em) scale(.5, 1.5)}
+    80% { transform: translateY(1em)}
+}

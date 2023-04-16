@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 40rem;
+    margin: 0 auto;
+    font-family: 'Marck Script', cursive;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+}
+
+img {
+    width: 100%;
+}

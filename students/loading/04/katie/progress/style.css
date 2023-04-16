@@ -1,0 +1,43 @@
+/*
+animation-fill-mode: forwards; animation-iteration-count: 1;
+character 
+https://web.archive.org/web/20091019073345/http://espanol.geocities.com/unasam_h/animes/personnages-person-ani.gif
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+.back {
+    position: absolute;
+    bottom: 0;
+    padding: 0.5% 1%;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+body {
+    background-color: black;
+}
+.map {
+    animation: panorama 4s alternate 0.2s 1 ease-in-out forwards;
+    margin: 0 auto;
+}
+
+@keyframes panorama {
+    from {
+        transform: translateX(0);
+    }
+   to {
+    transform: translateX(-24.75%);
+
+    }
+}
+

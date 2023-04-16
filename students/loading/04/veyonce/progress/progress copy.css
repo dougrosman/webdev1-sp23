@@ -1,0 +1,79 @@
+body {
+    background-image:url("https://garden.spoonflower.com/c/7370035/p/f/m/p8ywaDUXXa0ZQ0lZbdPnh2CNmBgbkpfA7Fx9eLze4pBwF-W-de873w/Taco%20Party%20Pink.jpg") ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.container {
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.text {
+    color:black;
+    margin-bottom:25px;
+    font-size:20px;
+   
+}
+
+.loading {
+
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.loading .line-box{
+    padding:25px;
+    width:40%;
+    height:20px;
+    border:5px solid #267591;
+    border-radius:20px;
+}
+
+.img {
+ 
+    height:1px;
+    border-radius:10px;
+
+}
+
+.loading .line-box .line {
+    
+height:40px;
+border-radius:40px;
+background:blue;
+animation:loading 2s forwards cubic-bezier(0,0,0,0);
+animation-fill-mode: forwards; 
+animation-iteration-count: 1;
+
+}
+
+
+
+
+@keyframes loading{
+    0%{
+        
+        width:0%;
+     }
+    100%{
+        width:100%;
+    }
+}
+
+
+
+
+
+

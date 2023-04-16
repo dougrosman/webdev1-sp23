@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 50rem;
+    margin: 0 auto;
+    font-family: 'Cookie', cursive;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #ffca8a;
+}
+
+header{
+    padding: 1em;
+    text-align: center;
+    font-size: 3rem;
+}
+
+footer{
+    padding: 1em;
+    text-align: center;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.baking{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%),1fr));
+}
+
+.cooking{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%),1fr));
+}
+
+.pasta, .buddah, .tempeh, .curry{
+    padding: 1em;
+    width: 400px;
+    height: 600px;
+    border: .3em solid #fcb053;
+}
+
+img{
+  border: .3em solid #fc9412;
+  padding: .5em;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+

@@ -1,0 +1,38 @@
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .circle{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    
+    animation: move-up 1s infinite alternate;
+  }
+  
+  @keyframes move-up{
+    to{
+      transform: translateY(-100%);
+      border-radius: 10%;
+    }
+  }
+  
+  .circle:nth-child(1) {background-color: red;
+  animation-delay: .125s;}
+  .circle:nth-child(2){background-color: orange;
+    animation-delay: .25s;}
+  .circle:nth-child(3){background-color: yellow; animation-delay:.325s;}
+  .circle:nth-child(4){background-color: green; animation-delay: .5s;}
+  .circle:nth-child(5){background-color: blue; animation-delay: .625s}
+  
+  body{
+    background-color: lightblue;
+  }

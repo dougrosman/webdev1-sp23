@@ -1,0 +1,9 @@
+body {
+	background:pink;
+	
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+
+	position: relative;
+  }

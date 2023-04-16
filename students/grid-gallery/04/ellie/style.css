@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Shadows Into Light Two', cursive;
+    margin: 0 auto;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: rgb(219, 197, 246);
+}
+
+header, footer{
+    padding: 2em;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-gap: auto;
+    grid-template-columns: [col]15fr [col]15fr [col]15fr [col]15fr;
+    grid-template-rows: [r]15fr [r] 15fr [r] 15fr [r] 15fr;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 2rem;
+    padding: 1em;
+}
+
+.a {
+    grid-column: col/span 2;
+    grid-row: row/span 2;
+}
+
+.b {
+    grid-column: col 3;
+    grid-row: row;
+}
+
+.c{
+    grid-column: col 4;
+    grid-row: row;
+}
+
+.f{
+    grid-column: col 3;
+    grid-row: row 2;
+    height: 100%;
+}
+
+.e{
+    grid-column: col 4;
+    grid-row: row 2;
+}
+
+.i{
+    grid-column: col;
+    grid-row: row 3 / span 2;
+    height: 100%;
+}
+
+.g{
+    grid-column: col 2;
+    grid-row: row 3 / span 2;
+    height: 100%;
+}
+
+.d{
+    grid-column: col 3/span 2;
+    grid-row: row 3;
+}
+
+.h{
+    grid-column: col 3/span 2;
+    grid-row: row 4;
+}
+
+@media (max-width: 500px){
+    body{
+        background-color: mediumpurple;
+    }
+}

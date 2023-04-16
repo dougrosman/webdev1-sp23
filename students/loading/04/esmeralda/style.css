@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 550px;
+    margin: 80px auto;
+    background-color:azure;
+}
+
+h1{
+    font-family: 'Ultra', serif;
+    text-align: center;
+    color: blueviolet;
+}
+
+nav{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.progress{
+    padding-right: 180px;
+}
+
+.looping{
+    padding-left: 180px;
+}

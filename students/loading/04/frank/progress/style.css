@@ -1,0 +1,86 @@
+body {
+    background-image: url(https://yesofcorsa.com/wp-content/uploads/2017/06/Lawn-Wallpaper-High-Definition.jpg);
+  }
+  
+  img {
+    max-width: 10em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  
+    transform: translateX(-35%);
+  }
+
+  a {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .progress-bar {
+    background-color: bisque;
+    border: dotted black;
+    border-radius: 1em;
+    height: 3em;
+    width: 30em;
+  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .loading-bar {
+    background-color: darkgreen;
+    border-radius: 1em;
+    animation: loading 5s forwards infinite;
+  }
+  
+  @keyframes loading {
+    0% {
+      height: 3em;
+      width: 0;
+    }
+  
+    10% {
+      background-color: rgb(255, 0, 0);
+    }
+  
+    20% {
+      background-color: rgb(255, 128, 0);
+    }
+  
+    30% {
+      background-color: rgb(255, 255, 0);
+    }
+  
+    40% {
+      background-color: rgb(81, 255, 0);
+    }
+  
+    50% {
+      background-color: rgb(0, 255, 208);
+    }
+  
+    60% {
+      background-color: rgb(81, 255, 0);
+    }
+  
+    70% {
+      background-color: rgb(255, 255, 0);
+    }
+  
+    80% {
+      background-color: rgb(255, 0, 0);
+    }
+  
+    90% {
+      background-color: rgb(255, 128, 0);
+    }
+  
+    100% {
+      height: 3em;
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    Padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 50 rem;
+    margin: 0 auto;
+    font-family: 'Lucida Sans';
+
+    display: flex;
+    flex-direction: colum;
+    justify-content: space-between;
+    min-height: 100vh;
+
+}
+
+header,
+footer {
+    padding: 2em;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+main {
+
+    background-color: lavender;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+img {
+
+    width: 250px;
+    flex-grow: 1;
+
+}

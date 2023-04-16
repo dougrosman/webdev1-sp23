@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rampart+One&family=Source+Code+Pro&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: rgb(54, 158, 184);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size:3rem;
+}
+
+nav{
+    display: flex;
+    gap:2em;
+    justify-content: center;
+    align-items: center; 
+
+    padding-top: 2em;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: rgb(255, 223, 45);
+    color:black;
+}
+
+a:hover{
+    background-color: aquamarine;
+}

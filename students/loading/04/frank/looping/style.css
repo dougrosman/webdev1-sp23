@@ -1,0 +1,39 @@
+a {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+.circle {
+    height: 10em;
+    width: 10em;
+    background-color:white;
+    border: solid rgb(135, 247, 237) 1em;
+    border-radius: 10em;
+    border-top: solid red 1em;
+
+    animation: looping 1.5s infinite;
+    
+}
+
+@keyframes looping {
+    0% {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    50% {
+        border: dashed rgb(135, 247, 237) 1em;
+        border-top: solid rgb(85, 0, 255) 3em;
+        transform: translate(-50%, -50%) rotate(180deg) skewY(10deg);
+    }
+
+    100% {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

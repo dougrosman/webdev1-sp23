@@ -1,0 +1,46 @@
+body{
+    background-color: pink;
+  }
+  
+  .progress {
+    margin: 50px auto;
+    padding: 2px;
+    width: 100%;
+    max-width: 500px;
+    border: 3px solid #05e35e;
+    height: 30px;
+    border-radius: 10%;
+  }
+  
+  .progress .bar {
+    height: 100%;
+    width: 0%;
+    background-color: #db2323;
+    animation: fill-bar 3s 1;
+    border-radius: 10%;
+  }
+
+  
+  @keyframes fill-bar{
+    0%{
+      width: 2%;
+      background-color: #db2323;
+    }
+    10%{
+      width: 15%;
+      background-color: #dba723;
+    }
+    30%{
+      width: 10%;
+      background-color: #db2323;
+    }
+    50%{
+      width: 45%;
+      background-color: #dba723;
+    }
+    100%{
+      width: 100%;
+      background-color:#23db29 ;
+    }
+    
+  }

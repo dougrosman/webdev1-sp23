@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(0, 141, 118);
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 15rem;
+}
+
+nav a{
+    margin: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:white;
+}

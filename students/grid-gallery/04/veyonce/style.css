@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Baskerville');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+body {
+    font-family:'Baskerville';
+    max-width: 40rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90vh;
+    background-color: #78d0ff;
+    color: #0055cc;
+}
+
+header, footer {
+    padding: 1em;
+    text-align: center;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+   width: 100%;
+   display: flex;
+}
+
+/* This is a media query. Think of it as a separate CSS stylesheet (but for a certain page size) */
+@media (max-width: 500px) {
+
+    body {
+        background-color: peachpuff;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+
+.container {
+    min-width: min(800px, 90%);
+  }
+}

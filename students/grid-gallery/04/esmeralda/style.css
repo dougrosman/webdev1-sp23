@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Racing Sans One', cursive;  
+  color: azure;
+  max-width: 40rem;
+  margin: 0 auto;
+  background-color: grey;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 325vh;
+}
+
+header,
+footer {
+  padding: 2em;
+  text-align: center;
+}
+
+p {
+  color: lightgrey;
+}
+
+.gallery {
+  background-color: azure;
+  padding: 0.5em;
+  border-radius: 4%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.7rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 10%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}

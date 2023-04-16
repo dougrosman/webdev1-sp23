@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #04aa14;
+  }
+  h1{
+    font-size: 4rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav{
+    font-size: 2rem;
+    padding: 20px;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a{
+    background-color: darkslategray;
+    color: black;
+    padding: .5em;
+  }
+  a:hover{
+    background-color: darkslategray;
+    color: white;
+    border-radius: 100px;
+  }

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightpink;
+    max-width: 100em;
+    margin: 2em auto;
+}
+
+h1{
+    color: lightseagreen;
+    font-size: 3rem;
+    text-align: center;
+}
+
+a {
+    color: palegoldenrod;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}

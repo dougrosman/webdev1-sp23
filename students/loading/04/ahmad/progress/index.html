@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Progress Loading Animation</title>
+	<style type="text/css">
+		.container {
+			height: 50px;
+			width: 200px;
+			border: 1px solid black;
+			overflow: hidden;
+			position: relative;
+			margin: 50px auto;
+		}
+		.progress {
+			height: 100%;
+			width: 0%;
+			background-color: red;
+			position: absolute;
+			top: 0;
+			left: 0;
+			animation: fill 2s infinite;
+			animation-timing-function: ease-in-out;
+		}
+		@keyframes fill {
+			0% { width: 0%; background-color: red; }
+			50% { background-color: yellow; }
+			100% { width: 100%; background-color: green; }
+		}
+	</style>
+</head>
+<body>
+    <a href="../index.html">Back</a>
+	<div class="container">
+		<div class="progress"></div>
+	</div>
+</body>
+</html>

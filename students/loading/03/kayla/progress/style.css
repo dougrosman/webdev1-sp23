@@ -1,0 +1,49 @@
+* {
+   margin: 0;
+ }
+ 
+ body {
+   position: absolute;
+   background-color: black;
+   color: var(--white);
+   top: 40%;
+   left: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .progress-bar {
+   position: relative;
+   height: 50px;
+   width: 500px;
+   background: var(--grey);
+   border-radius: 60px;
+ }
+ 
+ .progress-fill {
+   position: absolute;
+   height: 60px;
+   width: 0%;
+   animation: progress-fill 3s infinite;
+   background: green;
+   border-radius: 15px;
+ }
+ 
+ @keyframes progress-fill {
+ 0% {
+     width: 0%;
+   }
+   25% {
+     width: 50%;
+   }
+   50% {
+     width: 75%;
+   }
+   75% {
+     width: 85%;
+   }
+   100% {
+     width: 100%;
+   }
+ } ;

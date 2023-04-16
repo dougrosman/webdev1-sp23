@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkkhaki;
+}
+
+h1 {
+    font-family: 'Alkatra', cursive;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    animation-name: fun;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+
+    animation-name: fun;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fun {
+
+    from {
+        color: red;
+        font-size: 2rem;
+    }
+
+    to {
+        color: green;
+        font-size: 3rem;
+    }
+
+}

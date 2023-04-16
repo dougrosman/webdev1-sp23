@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* color palette used: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 80rem;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #283618;
+}
+
+header, footer {
+    padding: 1em;
+    text-align: center;
+    color: #fefae0;
+    background-color: #606C38;
+}
+
+main {
+    background-color: #DDA15E;
+    flex-grow: 1;
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 5px;
+    padding: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.long {
+    grid-row: span 2;
+    aspect-ratio: 1/2;
+}

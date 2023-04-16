@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://img.rawpixel.com/private/static/images/website/2022-05/rm218batch9-mynt-38.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=805338e41ce1480a747ce60266f14357");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  h1, nav {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  h1{
+    background-color: rgb(245, 178, 162);
+  }
+
+  

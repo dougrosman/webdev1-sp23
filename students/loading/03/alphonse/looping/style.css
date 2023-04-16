@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+header {
+  background-color: #F7B05B;
+}
+
+body {
+ background-image: url('https://static.vecteezy.com/system/resources/previews/003/851/910/original/yellow-polka-dots-seamless-pattern-retro-stylish-background-free-vector.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+}
+
+.container {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 8rem;
+  
+}
+
+h1 {
+  font-family: "Righteous", cursive;
+  text-align: center;
+  margin: auto 17rem;
+  color: red;
+}
+
+.Brian {
+  width: 15px;
+  height: 10px;
+  animation: move-up 1s infinite alternate;
+}
+
+@keyframes move-up {
+  to {
+    transform: translateY(-500%);
+    border-radius: 0;
+  }
+}
+
+.Brian:nth-child(1) {
+  animation-delay: 0.125s;
+}
+.Brian:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.Brian:nth-child(3) {
+  animation-delay: 0.325s;
+}
+.Brian:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.Brian:nth-child(5) {
+  animation-delay: 0.625s;
+}
+
+img {
+  width: 1000%;
+  height: auto;
+}

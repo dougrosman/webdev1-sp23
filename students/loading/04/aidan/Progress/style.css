@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: teal;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: lightgreen;
+}
+
+.box {
+    position: absolute;
+    background-color: #014242;
+    border: 0.3rem #014242 solid;
+    width: 50%;
+    height: 30px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subbox {
+    position: relative;
+    background-color: lightgreen;
+    width: 4rem;
+    height: 100%;
+    animation: stretch 10s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+
+@keyframes stretch {
+    from {
+        width: 4rem;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.snail-container {
+    position: absolute;
+    right: 0;
+    background-color: lightgreen;
+    width: 4rem;
+    height: 100%;
+}
+
+.snail {
+    position: absolute;
+    transform-origin: center;
+    transform: translate(-25%, -45%) rotate(150deg) scale(120%);
+}
