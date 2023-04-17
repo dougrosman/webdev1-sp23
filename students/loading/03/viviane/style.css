@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  padding: 2em;
+  width: max-content;
+  color: rgb(81, 155, 126)
+}
+
+nav {
+  display: flex;
+  gap: 1em;
+  font-size: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+
+nav a {
+  color: rgb(64, 145, 102);
+  background-color: azure;
+  padding: .5em;
+  transition: all 1s ease;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  color: rgb(31, 194, 104);
+  background-color: rgb(6, 45, 19);
+  border-radius: 100px;
+  transform: rotate(360deg);
+}
