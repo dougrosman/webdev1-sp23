@@ -1,54 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    max-width: 70rem;
-    margin: 0 auto;
+  max-width: 70rem;
+  margin: 0 auto;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
-header, footer {
-    text-align: center;
-    padding: 3rem;
-    margin: 0.5rem 0;
-    border-radius: 1rem;
-    background-color: gray;
+header,
+footer {
+  text-align: center;
+  padding: 3rem;
+  margin: 0.5rem 0;
+  border-radius: 1rem;
+  background-color: gray;
 }
 
 header {
-    font-family: 'Sedgwick Ave Display', 'cursive';
-    font-size: 2rem;
+  font-family: "Sedgwick Ave Display", "cursive";
+  font-size: 2rem;
 }
 
 .parent-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    grid-auto-rows: 1fr;
-    gap: 0.3rem;
-    margin: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.3rem;
+  margin: 0 1rem;
+}
+
+.box {
+  width: 100%;
 }
 
 .box img {
-    width: 100%;
-    height: 100%; 
-    /* ^ this fixes the world's stupidest RANDOM GAP that I spent 30 MINUTES FREAKING OUT OVER */
-    /* aspect-ratio: 1/1; */
-    border-radius: 1rem;
+  /* These three lines together forces all the images to be square. The width: 100% forces the image to fill the parent (which is the .box class, which is being sized by the parent with grid...so the width of each image ends up being however wide your columns are from grid-template-columns. */
+  width: 100%;
+  /* aspect-ratio forces the square, and since the width is being set by the grid-template-columns, this essentially sets the height of the images. It's important that aspect-ratio actually goes on the image inside the .box, rather than the .box. See this article: https://css-tricks.com/aspect-ratios-grid-items/ */
+  aspect-ratio: 1 / 1;
+  height: 100%; /* this height: 100%...fixes a weird gap that lol. It's only slightly noticeable below the wider first image if you don't have height: 100% */
+
+  object-fit: cover; /* ensures your images crop to fit instead of squeeze */
+  display: block;
+  border-radius: 1rem;
 }
 
-/* .box {
-    background-color: red;
-} */
-
 .a {
-    grid-column: 1 / 3;
+  grid-column: 1 / 3;
+}
+
+/* This is necessary to size the image to account for the multi-column spanning you're doing. */
+.a img {
+  aspect-ratio: 2 / 1;
+}
+
+
+
+/* without this media query to account for the wider first image, then weird things happen where your images stay in two columns in the narrow screen, but only the right column keeps shrinking at a certain point.
+
+This media query forces everything into identical squares in a single column at 32 rem (which is just slightly more than than 2x the 15rem you set your images to be in the minmax above.
+*/
+
+@media (max-width: 32rem) {
+
+  .a {
+    grid-column: unset;
+  }
+
+  .a img {
+    aspect-ratio: 1 / 1;
+  }
 }

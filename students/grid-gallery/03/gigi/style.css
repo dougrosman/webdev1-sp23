@@ -51,8 +51,8 @@ main{
 img{
   border: .3em solid #fc9412;
   padding: .5em;
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 

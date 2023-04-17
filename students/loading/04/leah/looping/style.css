@@ -1,0 +1,61 @@
+body{
+  background-color: cornflowerblue;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .wave {
+    width: 50px;
+    height: 50px;
+    background-color: #364363;
+    animation: wave .5s alternate ease;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes wave {
+    to {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+    }
+  
+  
+  .a {
+    background-color: #3e4d73;
+    animation-delay: 0;
+  }
+  .b {
+    background-color: #54699e;
+    animation-delay: .125s;
+  }
+  .c {
+    background-color: #728ed4;
+    animation-delay: .25s;
+  }
+  .d{
+    background-color: #7d9ce8;
+    animation-delay: .325s;
+  }
+  .e{
+    background-color: #8aabff;
+    animation-delay: .5s;
+  }
+  
