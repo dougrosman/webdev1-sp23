@@ -1,0 +1,39 @@
+.container {position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+gap: 2rem;
+  }
+.circle {
+width: 60px;
+height: 60px;
+border-radius: 750%;
+animation: move-up .95s infinite alternate;
+  }
+  
+@keyframes move-up {
+ to { transform: translateY(-150%);
+    }
+  }
+  
+.a {
+ background-color: hsl(0, 13%, 23%);
+ animation-delay: .120s;
+  }
+ .b {
+background-color: hsl(8, 17%, 9%);
+animation-delay: .20s;
+  }
+  .c {
+background-color: hsl(21, 39%, 22%);
+ animation-delay: .330s;
+  }
+  .d {
+ background-color: hsl(30, 86%, 22%);
+animation-delay: .75s;
+  }
+  body
+{ background-color: rgb(126, 104, 148);
+background-image: -moz-linear-gradient();
+  }

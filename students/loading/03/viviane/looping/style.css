@@ -1,0 +1,65 @@
+a {
+  color: rgb(34, 99, 75);
+  padding: .5em;
+  transition: all 1s ease;
+}
+
+a:hover {
+  color: lightblue;
+  background-color: rgb(66, 129, 84);
+  border-radius: 100px;
+}
+
+body {
+  background-color: #e4fcf4
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(54, 180, 119);
+  margin: .5rem;
+  border-radius: 30%;
+
+  animation: move-up 1s infinite alternate;
+}
+
+@keyframes move-up {
+  to {
+    transform: translateY(-200%);
+  }
+}
+
+.a {
+  background-color: hsl(160, 64%, 39%);
+  animation-delay: .125s;
+}
+
+.b {
+  background-color: hsl(170, 64%, 39%);
+  animation-delay: .25s;
+}
+
+.c {
+  background-color: hsl(180, 64%, 39%);
+  animation-delay: .325s;
+}
+
+.d {
+  background-color: hsl(190, 64%, 39%);
+  animation-delay: .5s;
+}
+
+.e {
+  background-color: hsl(200, 64%, 39%);
+  animation-delay: .625s;
+}

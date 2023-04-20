@@ -1,0 +1,25 @@
+body{
+position: absolute;
+top: 45%;
+left:30%;
+background-color: #d0b1d3;
+}
+.progress{
+position: relative;
+height: 15px;
+width: 1110%;
+border: 10px solid #1527ca;
+    
+}
+.progress .color{
+position: absolute;
+background-color: #41d8dd;
+width: 5px;
+height: 10px;
+animation: progres 4s infinite linear;    
+}
+@keyframes progres{
+ 0%{   width: 0%;}
+  
+100%{width: 100%;}
+};
