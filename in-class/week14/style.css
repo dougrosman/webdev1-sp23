@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #222;
+}
+
+header, footer {
+    padding: 1em;
+    background-color: #444;
+    color: #fdfdfd;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    gap: 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+#menu {
+    display: block;
+}
+
+header a {
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: salmon;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+}
+
+main {
+    max-width: 48rem;
+    margin: 10rem auto;
+    flex-grow: 1;
+    padding: 0 1em;
+}
+
+section {
+    margin: 3em auto;
+}
+
+p {
+    margin: 1em auto;
+    line-height: 1.8;
+}
+
+/* MENU STUFF */
+
+.flex-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+
+#menu-toggle {
+    display: none;
+    
+}
+
+
+@media (max-width: 42rem) {
+    #menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        position: relative;
+        z-index: 100;
+    }
+
+    .patty {
+        width: 2rem;
+        height: .125rem;
+        background-color: #fdfdfd;
+    }
+
+    #menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #444;
+        z-index: 0;
+        display: none;
+    }
+
+    .flex-wrapper {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .flex-wrapper a {
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: .125rem solid #fdfdfd;
+    }
+
+    .flex-wrapper a:last-child {
+        border-bottom: .125rem solid #fdfdfd;
+    }
+
+    .flex-wrapper a:hover {
+        background-color: #111;
+    }
+
+    /* .flex-wrapper a {
+        padding: 1em;
+    } */
+}
