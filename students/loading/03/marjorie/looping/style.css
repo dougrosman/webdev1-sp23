@@ -1,0 +1,37 @@
+
+.animation-container {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.animate {
+  position: absolute;
+  left: -100px;
+  animation: move 3.4s infinite;
+}
+
+@keyframes move {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 400px;
+  }
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  text-align:center;
+  font-family: Arial, sans-serif;
+  color:red;
+}
+
+  body {
+    position: absolute;
+      top: 40%;
+      position: fixed;
+    }

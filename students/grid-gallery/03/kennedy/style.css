@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Raleway:wght@200;300&family=Roboto+Mono:ital,wght@0,200;1,200&family=Sono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h3 {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    padding: 1rem;
+    padding-top: 0;
+}
+
+body {
+    max-width: 55rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    margin: 0.5em 0;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.footer {
+    font-size: small;
+}
+
+main {
+    padding: 1rem;
+    flex-grow: 1;
+    background-color: white;
+}
+
+.gallery {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    object-fit: cover;
+}

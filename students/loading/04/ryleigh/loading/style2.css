@@ -1,0 +1,40 @@
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/005/276/390/original/seamless-pattern-of-fresh-strawberry-background-used-for-magazine-book-card-menu-cover-web-pages-vector.jpg);
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loading .line {
+    border: 2px solid #8a6006;
+    height: 10px;
+    width: 100px;
+  }
+  .loading .line .fill {
+    height: 10px;
+    background: pink;
+    animation: loading 10s forwards;
+    animation-fill-mode: forwards; animation-iteration-count: 1;
+  }
+  @keyframes loading {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  

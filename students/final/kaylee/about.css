@@ -1,0 +1,56 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Source Code Pro";
+}
+body {
+    color: white;
+    margin: 0 auto;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header,
+  footer {
+    text-align: center;
+    background-color: black;
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background-color: black;
+    font-family: Arial;
+  }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    background-color: red;
+  }
+h1 {
+color: white;
+  font-size: 2em;
+}
+.intro {
+  margin-left: 50px;
+  padding-top: 100px;
+}
+img {
+  padding-top: 50px;
+  height: 450px;
+}
+p {
+  display: inline-block;
+}
