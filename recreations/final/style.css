@@ -134,7 +134,7 @@ a:hover {
 /* HERO */
 
 .hero {
-  min-height: 100svh; /* https://web.dev/viewport-units/ */
+  min-height: 100vh;
   background-image: url(images/hamster-hero.jpg);
   background-position: center;
   background-size: cover;
@@ -256,6 +256,11 @@ footer p {
   .hero {
     justify-content: flex-end;
     align-items: center;
+  }
+
+  .hero__text {
+    margin-top: unset;
+    margin-right: calc(1rem + 8vw);
   }
 
   .row {
